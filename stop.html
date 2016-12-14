@@ -100,7 +100,7 @@ JavaScriptでストップウォッチ
 
 	function updateTimerText() {
 		timerId = setTimeout(function() {
-			var t = Date.now() - startTime;
+			var t = Date.now() - startTime + elapsedTime;
 			timerText.innerHTML = (t / 1000).toFixed(2);
 			updateTimerText();
 
